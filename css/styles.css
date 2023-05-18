@@ -503,6 +503,9 @@ padding: 32px 0;
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
+  opacity: 1;
+  scale: 1;
+  transition: opacity var(--transition-parameters), scale var(--transition-parameters);
 }
 .modal-form {
   width: 408px;
@@ -532,9 +535,9 @@ padding: 32px 0;
 .is-hidden {
   visibility: hidden;
   opacity: 0;
+  scale: 0;
   pointer-events: none;
-  /*transition: opacity var(--transition-parameters);*/
-}
+  }
 
 
 /* ---------------------------------------Portfolio --------*/
